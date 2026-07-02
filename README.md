@@ -7,3 +7,4 @@ Front end do projeto Escola Reusar da disciplina de Desenvolvimento Web do curso
 - JavaScript
 - Bootstrap 5
 - Node.js
+- Saulo
