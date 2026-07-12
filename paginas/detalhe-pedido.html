@@ -35,41 +35,43 @@
 
 
     <main class="bloco-pedidos">       
-        <h1>Criar pedido</h1> 
+        <h1>Detalhes do pedido</h1> 
         <form action="" method="post">                
 
                 <div class="campo-form">
                     <label for="titulo-pedido">Título do pedido:</label>
-                    <input type="text" id="titulo-pedido" class="campo-entrada-titulo" placeholder="Digite o título do pedido"/>
+                    <input type="text" id="titulo-pedido" class="campo-entrada-titulo" placeholder="Título do pedido" readonly/>
                 </div>
 
                 <div class="campo-form">
                     <label for="titulo-pedido">Endereço:</label>
-                    <input type="text" id="titulo-pedido" class="campo-entrada-titulo" placeholder="Digite o endereço de doação"/>
+                    <input type="text" id="titulo-pedido" class="campo-entrada-titulo" placeholder="Endereço de doação" readonly/>
                 </div>
 
                 <div class="campo-form">
                     <label for="descricao-pedido">Descrição do pedido:</label>
-                    <textarea class="campo-entrada-textarea">Faça uma descrição do pedido</textarea>     
+                    <textarea class="campo-entrada-textarea" readonly>Descrição do pedido</textarea>     
                 </div>           
 
                 <div class="campo-form">
                     <label for="lista-materiais">Lista de materiais:</label>
-                    <textarea class="campo-entrada-textarea">Descreva os materiais solicitados</textarea>                
+                    <textarea class="campo-entrada-textarea" readonly>Materiais solicitados</textarea>                
                 </div>    
 
 
 
                 <div class="campo-form">
-                    <span class="titulo-campo">Seleção de imagens</span>
+                    <span class="titulo-campo">Imagens referencia</span>
                     <label for="upload-image" class="caixa-dropzone">
                         
-                        <p class="text-upload-image">Clique aqui ou arraste e solte as imagens</p>
-                    </label>
-                    <input type="file" id="upload-image" accept="image/*" multiple>                    
-                </div>     
+                        <p class="text-upload-image">Imagens</p>
+                    </label>                
+                </div>    
 
-                <button class="btn-publicar" type="submit">Publicar pedido</button>   
+                <div class="alinhamento-botoes">                    
+                    <button class="btn-publicar" type="submit">Voltar</button>   
+                    <button class="btn-publicar" type="submit">Entrar em contato</button>   
+                </div>
                   
         </form>   
 

@@ -73,7 +73,6 @@ label{
 }
 
 .btn-publicar {
-    display: block;
     margin: 0 auto;
     background-color: #4ef0ca;
     color: #1e5a4c;
@@ -84,6 +83,17 @@ label{
     font-size: 16px;
     cursor: pointer;
 }
+
+.botoes-alinhamento {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    gap: 15px;               
+    width: 100%;              
+    margin-top: 25px;         
+    margin-bottom: 10px;
+}
+
 
 .campo-upload {
     font-family: sans-serif;
@@ -105,7 +115,7 @@ label{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px dashed #ccc; 
+    border: 2px solid #ccc; 
     border-radius: 12px;     
     padding: 30px;
     cursor: pointer;
@@ -141,6 +151,53 @@ footer{
 footer h2{
     margin: 0;
     padding: 10px;
+}
+
+header{
+    background:#4d5269;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:55px;
+}
+
+.logo h1{
+    color:#2FE7C4;
+    font-size:34px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+    font-family: 'Quicksand';
+
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    border:1px solid white;
+    padding:10px 28px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:white;
+    color:#4d5269;
 }
 
 
