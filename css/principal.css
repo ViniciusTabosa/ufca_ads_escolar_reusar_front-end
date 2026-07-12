@@ -30,6 +30,11 @@ body {
   flex-direction: column;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .topo {
   background-color: var(--azul-escuro);
   display: flex;
@@ -66,16 +71,15 @@ body {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-.conteudo {
-  display: flex;
-}
+/* Principal */
 
-.bloco-principal {
-  margin: 85px 80px;
+.conteudo-principal {
+  display: flex;
+  margin: auto 10rem;
 }
 
 .apresentacao {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -83,6 +87,33 @@ body {
 
 .apresentacao span {
   color: var(--verde-claro);
+}
+
+.bloco-principal {
+  margin: 85px 80px;
+}
+
+/* Perfil */
+
+.conteudo-perfil {
+  margin: auto;
+}
+
+.info-perfil {
+  width: 100vh;
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imagem-perfil {
+  display: flex;
+  flex-direction: column;
+}
+
+.detalhes-perfil form {
+  display: flex;
+  flex-direction: column;
 }
 
 .rodape {
