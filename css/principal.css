@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --azul-escuro: #444a5f;
+  /* cabeçalho */
+  --azul-rodape: #353843;
+  /* rodapé */
+  --verde: #00cca0;
+  /* logo e detalhes */
+  --verde-claro: #56eecd;
+  /* botão "Mostrar mais" */
+  --amarelo-forte: #fdf279;
+  /* faixa de título do pedido */
+  --amarelo-claro: #f8f4bd;
+  /* descrição do pedido */
+  --cinza-borda: #d9dbe0;
+  --texto: #3b3b3b;
+}
+
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  color: var(--texto);
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topo {
+  background-color: var(--azul-escuro);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 18px 40px;
+}
+
+#logotipo {
+  width: 80px;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+}
+
+#texto-logo {
+  color: var(--verde);
+  font-size: 1.4rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--cinza-borda);
+  border: 2px solid var(--cinza-borda);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.conteudo {
+  display: flex;
+}
+
+.bloco-principal {
+  margin: 85px 80px;
+}
+
+.apresentacao {
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.apresentacao span {
+  color: var(--verde-claro);
+}
+
+.rodape {
+  background-color: var(--azul-rodape);
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  padding: 16px 0;
+}
