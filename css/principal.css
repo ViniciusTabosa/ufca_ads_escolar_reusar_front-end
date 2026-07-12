@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Reset, cabeçalho e rodapé compartilhados: css/base.css */
 
 :root {
   --azul-escuro: #444a5f;
@@ -25,45 +21,6 @@ body {
   font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   color: var(--texto);
   background-color: #ffffff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.topo {
-  background-color: var(--azul-escuro);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding: 18px 40px;
-}
-
-#logotipo {
-  width: 80px;
-}
-
-.marca {
-  display: flex;
-  align-items: center;
-}
-
-#texto-logo {
-  color: var(--verde);
-  font-size: 1.4rem;
-}
-
-.menu a {
-  text-decoration: none;
-  color: var(--cinza-borda);
-  border: 2px solid var(--cinza-borda);
-  border-radius: 18px;
-  padding: 18px;
-}
-
-.menu a:hover {
-  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .conteudo {
@@ -83,13 +40,4 @@ body {
 
 .apresentacao span {
   color: var(--verde-claro);
-}
-
-.rodape {
-  background-color: var(--azul-rodape);
-  color: #ffffff;
-  text-align: center;
-  font-size: 0.85rem;
-  letter-spacing: 3px;
-  padding: 16px 0;
 }

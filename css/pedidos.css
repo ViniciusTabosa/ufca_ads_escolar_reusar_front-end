@@ -1,9 +1,4 @@
-/* ---------- Reset básico ---------- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Reset, cabeçalho e rodapé compartilhados: css/base.css */
 
 :root {
     --azul-escuro: #444A5F;
@@ -26,59 +21,11 @@ body {
     font-family: "Segoe UI", Arial, Helvetica, sans-serif;
     color: var(--texto);
     background-color: #FFFFFF;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-}
-
-/* ---------- Cabeçalho ---------- */
-.topo {
-    background-color: var(--azul-escuro);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 12px;
-    padding: 18px 40px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--verde);
-    font-size: 1.4rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-}
-
-.menu a {
-    color: #FFFFFF;
-    font-size: 0.85rem;
-    border: 1px solid #FFFFFF;
-    border-radius: 8px;
-    padding: 7px 18px;
-}
-
-.menu a:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-}
-
-.menu a.ativo {
-    background-color: #F5F5F5;
-    color: var(--azul-escuro);
-    font-weight: 600;
 }
 
 /* ---------- Conteúdo ---------- */
@@ -258,14 +205,4 @@ a {
 
 .botao-mais:hover {
     filter: brightness(0.95);
-}
-
-/* ---------- Rodapé ---------- */
-.rodape {
-    background-color: var(--azul-rodape);
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 0.85rem;
-    letter-spacing: 3px;
-    padding: 16px 0;
 }
