@@ -1,0 +1,52 @@
+/* Reset, cabeçalho e rodapé compartilhados: css/base.css */
+
+:root {
+  --azul-escuro: #444a5f;
+  /* cabeçalho */
+  --azul-rodape: #353843;
+  /* rodapé */
+  --verde: #00cca0;
+  /* logo e detalhes */
+  --verde-claro: #56eecd;
+  /* botão "Mostrar mais" */
+  --amarelo-forte: #fdf279;
+  /* faixa de título do pedido */
+  --amarelo-claro: #f8f4bd;
+  /* descrição do pedido */
+  --cinza-borda: #d9dbe0;
+  --texto: #3b3b3b;
+}
+
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  color: var(--texto);
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Perfil */
+
+.conteudo-perfil {
+  margin: auto;
+}
+
+.info-perfil {
+  width: 100vh;
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imagem-perfil {
+  display: flex;
+  flex-direction: column;
+}
+
+.detalhes-perfil form {
+  display: flex;
+  flex-direction: column;
+}

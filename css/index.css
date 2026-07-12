@@ -49,26 +49,3 @@ a {
 .bloco-principal {
   margin: 85px 80px;
 }
-
-/* Perfil */
-
-.conteudo-perfil {
-  margin: auto;
-}
-
-.info-perfil {
-  width: 100vh;
-  height: 50vh;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.imagem-perfil {
-  display: flex;
-  flex-direction: column;
-}
-
-.detalhes-perfil form {
-  display: flex;
-  flex-direction: column;
-}

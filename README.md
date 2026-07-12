@@ -30,8 +30,9 @@ O projeto é 100% estático. Duas opções:
 │   └── perfil.html         # Perfil do usuário
 ├── css/
 │   ├── base.css            # Estilos COMPARTILHADOS: reset, cabeçalho e rodapé
-│   ├── style.css           # Estilos das telas de login e cadastro
-│   ├── principal.css       # Estilos da landing e do perfil
+│   ├── login-cadastro.css  # Estilos das telas de login e cadastro
+│   ├── index.css           # Estilos da landing (index)
+│   ├── perfil.css          # Estilos da tela de perfil
 │   └── pedidos.css         # Estilos das telas de pedidos
 └── imgs/                   # Logo e ilustrações
 ```
