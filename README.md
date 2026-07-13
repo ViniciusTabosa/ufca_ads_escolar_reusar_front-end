@@ -9,7 +9,7 @@ A Escola Reusar é uma plataforma que conecta **doadores** e **recebedores** de 
 ## 🧰 Tecnologias
 
 - HTML5
-- CSS3 puro (sem frameworks e sem JavaScript)
+- CSS3 puro
 
 ## 🚀 Como rodar
 
