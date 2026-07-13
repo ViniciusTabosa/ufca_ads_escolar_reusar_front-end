@@ -1,0 +1,204 @@
+h1{   
+    font-size: 20px;
+    color: #444A5F;    
+    text-align: left;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    display: block;
+    font-size: 15px;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    color: #444A5F;
+    
+}
+
+#titulo-pedido::placeholder{
+    font-size: 15px;
+    font-family: 'Quicksand';
+    color: #D3D3D3;
+}
+
+
+.campo-form{
+    padding: 10px;
+}
+
+
+.bloco-pedidos {    
+    min-height: 85vh; 
+    border: 2px solid #D3D3D3;
+    border-radius: 50px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 300px;  
+    margin-left: 300px;
+    display: block;
+    padding: 10px;
+}
+
+.campo-entrada-textarea{    
+    min-height: 13vh; 
+    border: 2px solid #D3D3D3;
+    border-radius: 10px;  
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Quicksand';
+    color: #D3D3D3;    
+    resize: none;
+}
+
+.campo-entrada-titulo{    
+    min-height: 3vh; 
+    border: 2px solid #D3D3D3;
+    border-radius: 10px;  
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Quicksand';
+    color: #D3D3D3;
+}
+
+#upload-image {
+    display: none;
+}
+
+.btn-publicar {
+    margin: 0 auto;
+    background-color: #4ef0ca;
+    color: #1e5a4c;
+    border: 2px solid #1abc9c;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botoes-alinhamento {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    gap: 15px;               
+    width: 100%;              
+    margin-top: 25px;         
+    margin-bottom: 10px;
+}
+
+
+.campo-upload {
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.titulo-campo {
+    font-size: 15px;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    color: #444A5F;
+
+}
+
+
+.caixa-dropzone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ccc; 
+    border-radius: 12px;     
+    padding: 30px;
+    cursor: pointer;
+}
+
+.caixa-dropzone p{
+    font-size: 15px;
+    font-family: 'Quicksand';
+    color: #D3D3D3;
+}
+
+.campo-form span{
+    font-size: 15px;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    color: #444A5F;
+}
+
+footer{
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 0px;
+    background-color: #252833;
+    color: white;
+    font-weight: bold;
+    font-family: 'Quicksand';
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer h2{
+    margin: 0;
+    padding: 10px;
+}
+
+header{
+    background:#4d5269;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:55px;
+}
+
+.logo h1{
+    color:#2FE7C4;
+    font-size:34px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+    font-family: 'Quicksand';
+
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    border:1px solid white;
+    padding:10px 28px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:white;
+    color:#4d5269;
+}
+
+
+

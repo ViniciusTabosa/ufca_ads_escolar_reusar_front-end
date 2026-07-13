@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Pedidos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+
+            <!-- LOGO DO PROJETO -->
+            <img src="../imgs/logo.png" alt="Logo Escola Reusar">
+
+            <h1>Escola Reusar</h1>
+
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="cadastro.html">Área de Pedidos</a></li>
+                <li><a href="login.html">Novo Pedido</a></li>
+                <li><a href="login.html">Meus Pedidos</a></li>
+                <li><a href="login.html">Meu Perfil</a></li>
+                <li><a href="login.html">Sair</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main class="bloco-pedidos">       
+        <h1>Criar pedido</h1> 
+        <form action="" method="post">                
+
+                <div class="campo-form">
+                    <label for="titulo-pedido">Título do pedido:</label>
+                    <input type="text" id="titulo-pedido" class="campo-entrada-titulo" placeholder="Digite o título do pedido"/>
+                </div>
+
+                <div class="campo-form">
+                    <label for="titulo-pedido">Endereço:</label>
+                    <input type="text" id="titulo-pedido" class="campo-entrada-titulo" placeholder="Digite o endereço de doação"/>
+                </div>
+
+                <div class="campo-form">
+                    <label for="descricao-pedido">Descrição do pedido:</label>
+                    <textarea class="campo-entrada-textarea">Faça uma descrição do pedido</textarea>     
+                </div>           
+
+                <div class="campo-form">
+                    <label for="lista-materiais">Lista de materiais:</label>
+                    <textarea class="campo-entrada-textarea">Descreva os materiais solicitados</textarea>                
+                </div>    
+
+
+
+                <div class="campo-form">
+                    <span class="titulo-campo">Seleção de imagens</span>
+                    <label for="upload-image" class="caixa-dropzone">
+                        
+                        <p class="text-upload-image">Clique aqui ou arraste e solte as imagens</p>
+                    </label>
+                    <input type="file" id="upload-image" accept="image/*" multiple>                    
+                </div>     
+
+                <button class="btn-publicar" type="submit">Publicar pedido</button>   
+                  
+        </form>   
+
+    </main>   
+</body>
+
+<footer>
+    <h2 class="text-footer">Code by: Grupo 9</h2>
+</footer>
+</html>
