@@ -49,3 +49,15 @@ a {
 .bloco-principal {
   margin: 85px 80px;
 }
+
+@media screen and (max-width: 1400px) {
+  .apresentacao {
+    font-size: 1.5rem;
+  }
+  .conteudo-principal {
+    margin: 0 20px 0 20px;
+  }
+  #imagem-principal img {
+    width: 25rem;
+  }
+}

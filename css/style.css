@@ -12,6 +12,11 @@ body{
     flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 label{
     display: block;
     font-size: 15px;
@@ -36,7 +41,7 @@ label{
 .bloco-pedidos {    
     min-height: 85vh; 
     border: 2px solid #D3D3D3;
-    border-radius: 50px;  
+    border-radius: 12px;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,24 +139,7 @@ label{
     color: #444A5F;
 }
 
-footer{
-    width: 100%;
-    padding: 20px 0;
-    box-sizing: border-box;
-    font-size: 18px;
-    padding: 0px;
-    background-color: #252833;
-    color: white;
-    font-weight: bold;
-    font-family: 'Quicksand';
-    text-align: center;
-    margin-top: 20px;
-}
 
-footer h2{
-    margin: 0;
-    padding: 10px;
-}
 
 header{
     background:#4d5269;
