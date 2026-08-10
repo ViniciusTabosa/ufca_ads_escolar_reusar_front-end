@@ -4,6 +4,11 @@
    Contém: reset, layout do body, cabeçalho e rodapé.
    ===================================================== */
 
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,18 +19,19 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
 }
 
 main {
-    flex: 1;
+    flex: 1; /* Garante que o footer fique sempre no final da tela */
 }
 
-/* ===== CABEÇALHO ===== */
+/* ===== CABEÇALHO (PADRÃO DESKTOP) ===== */
 
 header {
     background: #4d5269;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,6 +46,7 @@ header {
 
 .logo img {
     width: 55px;
+    height: auto;
 }
 
 .logo h1 {
@@ -68,11 +75,10 @@ nav a:hover {
     color: #4d5269;
 }
 
-/* ===== MENU LOGADO (páginas internas: pedidos, perfil) =====
-   Usar <nav class="menu-logado"> no lugar do <nav> padrão.
-   Marcar a página atual com class="ativo" no link. */
+/* ===== MENU LOGADO ===== */
 
 .menu-logado ul {
+    display: flex;
     flex-wrap: wrap;
     gap: 12px;
 }
@@ -94,7 +100,71 @@ nav a:hover {
 footer {
     background: #2d3040;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 18px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #2FE7C4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* =====================================================
+   RESPONSIVIDADE DO CABEÇALHO E MENU (MEDIA QUERIES)
+   ===================================================== */
+
+/* Tablets e Celulares (Telas até 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    .logo img {
+        width: 45px;
+    }
+
+    nav, .menu-logado {
+        width: 100%;
+    }
+
+    nav ul, .menu-logado ul {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    nav a, .menu-logado a {
+        padding: 6px 14px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Celulares Pequenos (Telas até 480px) */
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    nav ul, .menu-logado ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    nav a, .menu-logado a {
+        text-align: center;
+        display: block;
+        padding: 10px;
+    }
 }
