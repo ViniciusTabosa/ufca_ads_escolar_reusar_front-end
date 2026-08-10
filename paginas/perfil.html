@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,23 @@
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/perfil.css">
 </head>
+
 <body>
   <header>
     <div class="logo">
       <img src="../imgs/logo.png" alt="Logo Escola Reusar">
       <h1>Escola Reusar</h1>
     </div>
-    <nav class="menu-logado">
+    
+    <nav class="menu-logado menu">
+      <input type="checkbox" class="menu-faketrigger">
+
+      <div class="menu-lines">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       <ul>
         <li><a href="lista-pedidos.html">Área de pedidos</a></li>
         <li><a href="criacao-pedidos.html">Novo pedido</a></li>
@@ -22,6 +33,7 @@
         <li><a href="../index.html">Sair</a></li>
       </ul>
     </nav>
+    
   </header>
 
   <main class="conteudo-perfil">
@@ -59,7 +71,9 @@
   </main>
 
   <footer>
-    <p>Code by: <a href="https://github.com/ViniciusTabosa/ufca_ads_escolar_reusar_front-end" target="_blank">PISociety</a></p>
+    <p>Code by: <a href="https://github.com/ViniciusTabosa/ufca_ads_escolar_reusar_front-end"
+        target="_blank">PISociety</a></p>
   </footer>
 </body>
+
 </html>
