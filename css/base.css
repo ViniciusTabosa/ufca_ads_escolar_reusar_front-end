@@ -137,7 +137,6 @@ footer a:hover {
     }
 
     nav ul, .menu-logado ul {
-        justify-content: center;
         gap: 8px;
     }
 
