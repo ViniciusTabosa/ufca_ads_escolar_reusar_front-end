@@ -57,6 +57,12 @@ a {
   max-width: 500px;
 }
 
+@media (max-width: 320px) {
+  #imagem-principal img {
+    width: 10px;
+  }
+}
+
 @media (min-width: 769px) and (max-width: 1400px) {
   .apresentacao {
     font-size: 1.5rem;
