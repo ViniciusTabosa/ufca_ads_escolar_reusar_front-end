@@ -192,17 +192,65 @@ a {
 
 /* Botão "Mostrar mais" */
 .botao-mais {
-    align-self: center;
+    align-self:       center;
     background-color: var(--verde-claro);
-    border: 1px solid #2BA58C;
-    border-radius: 8px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: #21424D;
-    padding: 8px 18px;
-    margin-top: 6px;
+    border:           1px solid #2BA58C;
+    border-radius:    8px;
+    font-size:        0.8rem;
+    font-weight:      600;
+    color:            #21424D;
+    padding:          8px 18px;
+    margin-top:       6px;
 }
 
 .botao-mais:hover {
     filter: brightness(0.95);
+}
+
+/* media querys */
+
+/* Tablet/celular: filtros viram uma faixa acima da lista */
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 20px;
+    }
+
+    .filtros {
+        width: 100%;
+        min-height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .filtros h2 {
+        margin-bottom: 0;
+    }
+
+    .lista {
+        padding: 16px;
+    }
+
+    .trilho {
+        display: none;
+    }
+}
+
+/* Celular: foto do pedido acima do texto */
+@media (max-width: 480px) {
+    .conteudo {
+        padding: 18px 12px;
+    }
+
+    .pedido {
+        flex-direction: column;
+    }
+
+    .carrossel {
+        width: 100%;
+        min-height: 160px;
+    }
 }
