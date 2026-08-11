@@ -31,23 +31,25 @@ a {
 /* Perfil */
 
 .conteudo-perfil {
-  margin: auto;
+  margin: 1rem auto;
 }
 
 .info-perfil {
-  width: 100vh;
-  height: 75vh;
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 20px;
+  max-width: 40rem;
+  height: 30rem;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 2fr;
   border: 2px solid var(--cinza-borda);
-  padding: 40px 0 10px 0;
+  padding: 2rem 0 0.5rem 0;
   border-radius: 12px;
+  justify-items: center;
 }
 
 .imagem-perfil {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 }
 
 .imagem-perfil img {
@@ -108,7 +110,20 @@ li {
 }
 
 #btn-salvar-form {
-  position: absolute;
+  grid-column: 1/-1;
   align-self: flex-end;
   width: 100px;
+}
+
+@media (max-width: 425px) {
+  .info-perfil {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    height: 45rem;
+  }
+
+  .imagem-perfil img {
+    width: 8rem;
+  }
 }
