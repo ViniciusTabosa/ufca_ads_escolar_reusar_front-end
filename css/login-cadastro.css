@@ -99,79 +99,6 @@ button:hover{
     width:420px;
 }
 
-/* ===== FORMULÁRIO ===== */
-
-.formulario{
-    background:#4d5269;
-    width:460px;
-    padding:40px;
-    border-radius:18px;
-    color:white;
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
-}
-
-.formulario h2{
-    color:#42f0d2;
-    font-size:34px;
-    margin-bottom:10px;
-}
-
-.formulario p{
-    color:#d9d9d9;
-    margin-bottom:25px;
-    font-size:14px;
-}
-
-label{
-    display:block;
-    margin-top:18px;
-    margin-bottom:6px;
-}
-
-input{
-    width:100%;
-    padding:12px;
-    border:none;
-    border-radius:18px;
-    font-size:14px;
-}
-
-button{
-    display:block;
-    margin:30px auto 0;
-    width:140px;
-    padding:12px;
-    border-radius:18px;
-    border:1px solid white;
-    background:transparent;
-    color:white;
-    cursor:pointer;
-    transition:.3s;
-}
-
-button:hover{
-    background:white;
-    color:#4d5269;
-}
-
-
-
-.ilustracao{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.placeholder-imagem{
-    width:420px;
-    height:420px;
-}
-
-
-.ilustracao img{
-    width:420px;
-}
-
 /* ===== RESPONSIVIDADE ===== */
 
 @media (max-width: 768px) {
@@ -219,4 +146,55 @@ button:hover{
         height: auto;
     }
 
+}
+
+/* ===== MENSAGENS DO FORMULÁRIO ===== */
+
+.mensagem {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    min-height: 20px;
+}
+
+.mensagem.erro {
+    color: #ffb3b3;
+}
+
+.mensagem.sucesso {
+    color: #42f0d2;
+}
+
+/* ===== CAMPO DE SENHA ===== */
+
+.campo-senha {
+    position: relative;
+    width: 100%;
+}
+
+.campo-senha input {
+    width: 100%;
+    padding-right: 80px;
+    box-sizing: border-box;
+}
+
+.mostrar-senha {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: auto;
+    margin: 0;
+    padding: 5px 8px;
+
+    border: none;
+    color: #4d5269;
+    background: transparent;
+    font-size: 12px;
+}
+
+.mostrar-senha:hover {
+    background: transparent;
+    color: #42f0d2;
 }
