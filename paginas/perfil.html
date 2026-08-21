@@ -15,7 +15,7 @@
       <img src="../imgs/logo.png" alt="Logo Escola Reusar">
       <h1>Escola Reusar</h1>
     </div>
-    
+
     <nav class="menu-logado menu">
       <input type="checkbox" class="menu-faketrigger">
 
@@ -33,7 +33,7 @@
         <li><a href="../index.html">Sair</a></li>
       </ul>
     </nav>
-    
+
   </header>
 
   <main class="conteudo-perfil">
@@ -43,30 +43,31 @@
         <button class="btn-perfil">Alterar imagem</button>
       </div>
       <div class="detalhes-perfil">
-        <form action="./" method="post" class="form-perfil">
+        <h2>Detalhes do usuário</h2>
+        <form action="#" method="post" class="form-perfil" id="form-perfil">
           <ul class="info-forms">
-            <h2>Detalhes do usuário</h2>
+            <li>Nome: </li>
+            <label id="nome-atual">Gohan da Silva </label>
 
-            <li for="inp-nome">Nome: </li>
-            <label for="inp-nome">Gohan da Silva </label>
-
-            <li for="inp-nome">Email: </li>
-            <label for="inp-nome">gohandasilvaGS@gmail.com</label>
+            <li>Email: </li>
+            <label id="email-atual">gohandasilvaGS@gmail.com</label>
           </ul>
+
           <label for="inp-nome" class="label-form">Nome</label>
-          <input type="text" id="inp-nome" placeholder="Alterar nome de usuário">
+          <input type="text" id="inp-nome" placeholder="Alterar nome de usuário" name="inp-nome" required>
 
           <label for="inp-email" class="label-form">E-mail</label>
-          <input type="text" id="inp-email" placeholder="Novo e-mail">
+          <input type="text" id="inp-email" placeholder="Novo e-mail" name="inp-email" >
 
           <label for="inp-senha" class="label-form">Senha</label>
-          <input type="text" id="inp-senha" placeholder="Nova senha">
+          <input type="password" id="inp-senha" placeholder="Nova senha" name="inp-senha" required>
 
           <label for="inp-confirm" class="label-form">Confirmar senha</label>
-          <input type="text" id="inp-confirm" placeholder="Confirmar nova senha">
+          <input type="password" id="inp-confirm" placeholder="Confirmar nova senha" name="inp-confirm" required>
+          
+          <button type="submit" id="btn-salvar-form" class="btn-perfil">Salvar</button>
         </form>
       </div>
-      <button id="btn-salvar-form" class="btn-perfil">Salvar</button>
     </section>
   </main>
 
@@ -74,6 +75,8 @@
     <p>Code by: <a href="https://github.com/ViniciusTabosa/ufca_ads_escolar_reusar_front-end"
         target="_blank">PISociety</a></p>
   </footer>
+
+  <script src="../js/script.js"></script>
 </body>
 
 </html>
