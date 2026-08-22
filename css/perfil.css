@@ -30,25 +30,31 @@ a {
 
 /* Perfil */
 
+/* Main - Conteúdo do perfil */
+
 .conteudo-perfil {
   margin: 1rem auto;
 }
+/* Section - Iamgem e Detalhes do Perfil */
 
 .info-perfil {
   max-width: 40rem;
   height: 30rem;
   display: grid;
   gap: 10px;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 2fr;
   border: 2px solid var(--cinza-borda);
-  padding: 2rem 0 0.5rem 0;
+  padding: 2rem;
   border-radius: 12px;
   justify-items: center;
 }
 
+/* Div - Imagem do Perfil */
+
 .imagem-perfil {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 1rem;
 }
 
@@ -56,8 +62,15 @@ a {
   border: 4px solid var(--verde);
   border-radius: 100%;
   background-color: var(--verde);
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
+  width: 12rem;
 }
+
+.imagem-perfil button {
+  width: 8rem;
+}
+
+/* Div - Detalhes do Perfil */
 
 .detalhes-perfil form {
   display: flex;
@@ -67,6 +80,24 @@ a {
 .detalhes-perfil input {
   margin-bottom: 20px;
 }
+
+.detalhes-perfil h2 {
+  font-size: 1.4rem;
+  color: var(--azul-escuro);
+}
+
+/* Forms - Imagens e informações do Perfil */
+
+
+.form-perfil input {
+  border-radius: 12px;
+  border: 2px solid var(--cinza-borda);
+  height: 30px;
+  width: 220px;
+  padding: 4px;
+}
+
+/* Ul - Imagem do Perfil */
 
 .info-forms {
   display: flex;
@@ -80,18 +111,11 @@ a {
   font-weight: 800;
 }
 
-.info-forms h2,
-li {
+.info-forms li {
   color: var(--azul-escuro);
 }
 
-.form-perfil input {
-  border-radius: 12px;
-  border: 2px solid var(--cinza-borda);
-  height: 30px;
-  width: 220px;
-  padding: 4px;
-}
+/* Labels e Inputs - Alterar informações do Perfil */
 
 .label-form {
   color: var(--azul-escuro);
@@ -100,19 +124,24 @@ li {
 
 .btn-perfil {
   background-color: var(--verde-claro);
-  border: 2px solid var(--verde);
-  border-radius: 12px;
+  border: 1px solid #2BA58C;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
   padding: 4px;
+  color:#21424D;
 }
 
 .btn-perfil:hover {
-  background-color: var(--verde);
+  filter: brightness(0.95);
 }
 
 #btn-salvar-form {
   grid-column: 1/-1;
   align-self: flex-end;
   width: 100px;
+  position: relative;
+  right: 77%;
 }
 
 @media (max-width: 425px) {
