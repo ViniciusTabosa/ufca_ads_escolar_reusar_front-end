@@ -1,5 +1,41 @@
-<<<<<<< HEAD
-// CADASTRO
+// Validações do form de Perfil do Usuário
+
+const formPerfil = document.getElementById("form-perfil");
+
+if (formPerfil) {
+
+    const nomePerfil = document.getElementById("inp-nome");
+    const emailPerfil = document.getElementById("inp-email");
+    const senhaPerfil = document.getElementById("inp-senha");
+    const confirmPerfil = document.getElementById("inp-confirm");
+
+    const dominioEmail = email => (email.value.split("@"))[1]
+
+    formPerfil.addEventListener("submit", function (salvar) {
+    salvar.preventDefault();
+    
+    if (nomePerfil.value.trim() === "") {
+        alert("Digite o nome")
+        nomePerfil.focus()
+    }
+    if (emailPerfil.value.trim() === "" || !emailPerfil.value.includes("@") || dominioEmail(emailPerfil) === "") {
+        alert("Digite um email válido")
+        emailPerfil.focus()
+    }
+    if (senhaPerfil.value.trim() === "") {
+        alert("Digite a nova senha")
+        senhaPerfil.focus()
+    }
+    if (confirmPerfil.value.trim() === "" || !(confirmPerfil.value === senhaPerfil.value)) {
+        alert("Senhas diferentes! Repita a nova senha")
+        confirmPerfil.focus()
+    }
+
+    });
+
+}
+
+// Validações do formulário de Cadastro
 
 const formCadastro = document.getElementById("formCadastro");
 
@@ -9,144 +45,97 @@ if (formCadastro) {
     const email = document.getElementById("email");
     const senha = document.getElementById("senha");
     const confirmarSenha = document.getElementById("confirmarSenha");
-    const mensagem = document.getElementById("mensagemCadastro");
 
-    formCadastro.addEventListener("submit", function(event) {
+    formCadastro.addEventListener("submit", function (cadastro) {
 
-        event.preventDefault();
+        cadastro.preventDefault();
 
-        mensagem.textContent = "";
-        mensagem.className = "mensagem";
-
-        // Verifica nome
         if (nome.value.trim() === "") {
-            mensagem.textContent = "Por favor, informe seu nome.";
-            mensagem.classList.add("erro");
+
+            alert("Digite o nome");
             nome.focus();
             return;
+
         }
 
-        // Verifica e-mail
-        if (email.value.trim() === "") {
-            mensagem.textContent = "Por favor, informe seu e-mail.";
-            mensagem.classList.add("erro");
+        if (email.value.trim() === "" || !email.value.includes("@") || !email.value.includes(".")) {
+            alert("Digite um email válido");
             email.focus();
             return;
         }
 
-        // Verifica formato do e-mail
-        const formatoEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!formatoEmail.test(email.value)) {
-            mensagem.textContent = "Digite um e-mail válido.";
-            mensagem.classList.add("erro");
-            email.focus();
-            return;
-        }
-
-        // Verifica senha
-        if (senha.value === "") {
-            mensagem.textContent = "Por favor, informe uma senha.";
-            mensagem.classList.add("erro");
+        if (senha.value.trim() === "") {
+            alert("Digite uma senha");
             senha.focus();
             return;
         }
 
-        // Verifica tamanho da senha
         if (senha.value.length < 6) {
-            mensagem.textContent = "A senha deve possuir pelo menos 6 caracteres.";
-            mensagem.classList.add("erro");
+            alert("A senha deve possuir pelo menos 6 caracteres");
             senha.focus();
             return;
         }
 
-        // Verifica confirmação da senha
-        if (confirmarSenha.value === "") {
-            mensagem.textContent = "Confirme sua senha.";
-            mensagem.classList.add("erro");
+        if (confirmarSenha.value.trim() === "" || confirmarSenha.value !== senha.value) {
+            alert("Senhas diferentes! Repita a senha");
             confirmarSenha.focus();
             return;
         }
 
-        // Compara as senhas
-        if (senha.value !== confirmarSenha.value) {
-            mensagem.textContent = "As senhas não coincidem.";
-            mensagem.classList.add("erro");
-            confirmarSenha.focus();
-            return;
-        }
-
-        // Cadastro válido
-        mensagem.textContent = "Cadastro realizado com sucesso!";
-        mensagem.classList.add("sucesso");
-
-        // Limpa o formulário
-        formCadastro.reset();
+        alert("Cadastro realizado com sucesso!");
 
     });
+
 }
 
-
-// LOGIN
+// Validações do formulário de Login
 
 const formLogin = document.getElementById("formLogin");
 
 if (formLogin) {
 
-    const email = document.getElementById("email");
-    const senha = document.getElementById("senha");
-    const mensagem = document.getElementById("mensagemLogin");
+    const emailLogin = document.getElementById("email");
+    const senhaLogin = document.getElementById("senha");
 
-    formLogin.addEventListener("submit", function(event) {
+    formLogin.addEventListener("submit", function (login) {
 
-        event.preventDefault();
+        login.preventDefault();
 
-        mensagem.textContent = "";
-        mensagem.className = "mensagem";
-
-        // Verifica e-mail
-        if (email.value.trim() === "") {
-            mensagem.textContent = "Por favor, informe seu e-mail.";
-            mensagem.classList.add("erro");
-            email.focus();
+        if (emailLogin.value.trim() === "" || !emailLogin.value.includes("@") || !emailLogin.value.includes(".")) {
+            alert("Digite um email válido");
+            emailLogin.focus();
             return;
         }
 
-        // Verifica formato do e-mail
-        const formatoEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!formatoEmail.test(email.value)) {
-            mensagem.textContent = "Digite um e-mail válido.";
-            mensagem.classList.add("erro");
-            email.focus();
+        if (senhaLogin.value.trim() === "") {
+            alert("Digite sua senha");
+            senhaLogin.focus();
             return;
         }
 
-        // Verifica senha
-        if (senha.value === "") {
-            mensagem.textContent = "Por favor, informe sua senha.";
-            mensagem.classList.add("erro");
-            senha.focus();
+        if (senhaLogin.value.length < 6) {
+            alert("Senha incorreta. A senha foi cadastrada com pelo menos 6 caracteres");
+            senhaLogin.focus();
             return;
         }
 
-        // Login válido
-        mensagem.textContent = "Login realizado com sucesso!";
-        mensagem.classList.add("sucesso");
+        alert("Login realizado com sucesso!");
 
     });
+
 }
 
+// Interação: Mostrar / Ocultar Senha
 
-// MOSTRAR / OCULTAR SENHA
+const botoesSenha =
+    document.querySelectorAll(".mostrar-senha");
 
-const botoesSenha = document.querySelectorAll(".mostrar-senha");
+botoesSenha.forEach(function (botao) {
 
-botoesSenha.forEach(function(botao) {
+    botao.addEventListener("click", function () {
 
-    botao.addEventListener("click", function() {
-
-        const campoSenha = botao.parentElement.querySelector("input");
+        const campoSenha =
+            botao.parentElement.querySelector("input");
 
         if (campoSenha.type === "password") {
 
@@ -159,41 +148,6 @@ botoesSenha.forEach(function(botao) {
             botao.textContent = "Mostrar";
 
         }
-
     });
-
 });
-=======
-// Validações do form de Perfil do Usuário
 
-const formPerfil = document.getElementById("form-perfil");
-
-const nomePerfil = document.getElementById("inp-nome");
-const emailPerfil = document.getElementById("inp-email");
-const senhaPerfil = document.getElementById("inp-senha");
-const confirmPerfil = document.getElementById("inp-confirm");
-
-const dominioEmail = email => (email.value.split("@"))[1]
-
-formPerfil.addEventListener("submit", function (salvar) {
-  salvar.preventDefault();
-  
-  if (nomePerfil.value.trim() === "") {
-    alert("Digite o nome")
-    nomePerfil.focus()
-  }
-  if (emailPerfil.value.trim() === "" || !emailPerfil.value.includes("@") || dominioEmail(emailPerfil) === "") {
-    alert("Digite um email válido")
-    emailPerfil.focus()
-  }
-  if (senhaPerfil.value.trim() === "") {
-    alert("Digite a nova senha")
-    senhaPerfil.focus()
-  }
-  if (confirmPerfil.value.trim() === "" || !(confirmPerfil.value === senhaPerfil.value)) {
-    alert("Senhas diferentes! Repita a nova senha")
-    confirmPerfil.focus()
-  }
-
-});
->>>>>>> main
